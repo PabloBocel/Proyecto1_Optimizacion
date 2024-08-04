@@ -212,7 +212,7 @@ namespace Proyecto1_Optimizacion
                 // Ensure index is within bounds
                 if (index < 0 || index >= node.Children.Count)
                 {
-                    throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range for node.Children");
+                    return;
                 }
 
                 if (node.Children[index].Keys.Count < t)
